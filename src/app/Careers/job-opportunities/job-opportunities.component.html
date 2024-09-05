@@ -1,0 +1,94 @@
+<div class="profile-section">
+  <div class="profile-text">
+    <p>Complétez votre profil et vérifiez votre compte.</p>
+  </div>
+  <div class="profile-button">
+    <button [routerLink]="['/profile-e1']">Compléter mon profil</button>
+  </div>
+</div>
+
+<div class="job-offer-section">
+  <h1 class="job-offer-title">Offre D’emploi</h1>
+  <div class="job-offer-description">
+
+    <p>Vous cherchez à donner un nouvel élan à votre carrière ? </p>
+    <p>Consultez nos offres de recrutement actuelles et découvrez des opportunités excitantes pour rejoindre notre équipe.</p>
+  </div>
+</div>
+
+<div class="choose-container">
+  <div class="choose-section">
+  <select id="categorie"required>
+    <option value="">Catégorie d'emploi</option>
+    <option value="Tous">Tous les catégories d'emploi</option>
+    <option value="distance">A distance</option>
+    <option value="site">Sur le site</option>
+  </select>
+  <select id="Type"required>
+    <option value="">Type d'emploi</option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+  </select>
+  <select id="Level-of-experience"required>
+    <option value="">Niveau d'expérience</option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+  </select>
+  </div>
+  <div class="search">
+    <p-iconField iconPosition="left">
+      <p-inputIcon styleClass="pi pi-search" />
+      <input type="text" pInputText placeholder="Search" />
+    </p-iconField>
+  </div>
+
+</div>
+<!--(click)="viewDetails(job.id)"-->
+<div *ngFor="let job of jobs" (click)="viewDetails(job.id)" class="job-offer-link">
+  <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1rem" class="job-offer-container" style="padding: 1vw">
+    <div  fxLayout="column" fxLayoutAlign="center end"  style="width: 100%; padding-right: 1vw; " class="margininit">
+      <p style="font-size: 0.6rem" >{{ job.date }}</p>
+    </div>
+    <div  style="width: 100%; padding-right: 1vw;padding-left: 1vw;" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="1rem">
+      <div class="job-offer-left">
+        <p>{{ job.title }}</p>
+      </div>
+      <div class="job-offer-right">
+        <p class="job-location">{{ job.location }} <span>Plus de détails <img src="/assets/images/Path%2014.png" alt="Image"></span></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div *ngFor="let job of jobs" (click)="viewDetails(job.id)" class="job-offer-link">
+  <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1rem" class="job-offer-container" style="padding: 1vw">
+    <div  fxLayout="column" fxLayoutAlign="center end"  style="width: 100%; padding-right: 1vw; " class="margininit">
+      <p style="font-size: 0.6rem" >{{ job.date }}</p>
+    </div>
+    <div  style="width: 100%; padding-right: 1vw;padding-left: 1vw;" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="1rem">
+      <div class="job-offer-left">
+        <p>{{ job.title }}</p>
+      </div>
+      <div class="job-offer-right">
+        <p class="job-location">{{ job.location }} <span>Plus de détails <img src="/assets/images/Path%2014.png" alt="Image"></span></p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<div class="pagination-container">
+  <p-paginator
+    (onPageChange)="onPageChange($event)"
+    [first]="first"
+    [rows]="rows"
+    [totalRecords]="120"/>
+</div>
+
+
+
+
+

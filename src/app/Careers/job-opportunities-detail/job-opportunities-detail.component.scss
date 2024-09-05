@@ -1,0 +1,138 @@
+.job-container {
+  width: 100%;
+  padding: 2rem; /* Espace autour du conteneur */
+}
+
+.Back {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 2rem; /* Espace en dessous de la section retour */
+  cursor: pointer; /* Indique que c'est cliquable */
+}
+
+.Back-img {
+  width: 0.6rem; /* Ajuste la taille de l'image */
+  margin-right: 0.5rem; /* Espace entre l'image et le texte */
+}
+
+.Back-text {
+  font-size: 1.2rem; /* Ajuste la taille du texte */
+  color: #333A94; /* Couleur du texte */
+  line-height: 1.2rem; /* Alignement vertical avec l'image */
+}
+
+.job-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.job-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 6rem;
+
+  //margin-right: 10rem;
+  //margin-left: 8rem;
+}
+
+.job-info-item {
+  display: flex;
+  align-items: center;
+  //gap: 0.5rem;
+  //flex: 1;
+  margin-right: 1.5rem;
+}
+
+.job-info-item img {
+  width: 1.5vw;
+  margin-right: 0.3rem;
+  //height: 3vh; /* Maintient le ratio de l'image */
+}
+
+.job-info-item p {
+  margin: 0;
+  font-size: 1.4rem; /* Taille du texte */
+  color: #333; /* Couleur du texte */
+}
+
+
+
+  .Back {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+  }
+
+
+.job-info-item p {
+  margin: 0;
+  color: #8989A2;
+  font-size: 0.9rem; /* Taille de la police ajustée en fonction de l'écran */
+}
+
+.job-description-container {
+  max-width: 100vw;
+  //margin-left: 8rem;
+}
+
+.job-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333A94;
+  font-weight: bold;
+}
+
+.job-location {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.job-description,
+.job-qualifications,
+.job-technologies,
+.job-skills.job-details {
+  margin-bottom: 4rem;
+}
+
+.job-details {
+  width: 20vw;
+  margin-top: 8rem;
+  color: #6D6D6D;
+  margin-bottom: 8rem;
+}
+
+h3 {
+  color: #6D6D6D;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+p, li {
+  font-size: 1.4rem;
+}
+
+ul {
+  padding-left: 2rem;
+  list-style-type: disc;
+}
+
+.apply-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #65A1F2;
+  color: #fff;
+  border: none;
+  height: 7vh;
+  width: 12vw;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 50px;
+  text-decoration: none;
+}

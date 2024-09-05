@@ -1,0 +1,85 @@
+.mission-section {
+  display: flex;
+  max-width: 1200px; /* Largeur maximale du conteneur flex */
+  //margin: 0 auto; /* Centrer horizontalement */
+  padding: 20px;
+}
+
+.mission-text {
+  background-color: #fff;
+  margin-left: 100px;
+  flex: 2; /* Occupe deux fois plus d'espace que mission-image */
+  padding: 20px;
+  // box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mission-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mission-list {
+  margin-bottom: 20px;
+}
+
+.mission-list li {
+  margin-bottom: 10px;
+}
+
+.mission-list li:before {
+  color: #f39c12;
+  margin-right: 10px;
+}
+
+.mission-image {
+  flex: 1; /* Occupe un espace */
+  padding: 20px; /* Espacement interne */
+}
+
+.mission-image img {
+  max-width: 100%; /* Image responsive */
+  height: auto;
+  width: 26rem;
+  margin-left: 10rem;
+}
+
+
+
+
+.about-section {
+  display: flex;
+  align-items: center; /* Centre verticalement les éléments */
+  padding: 20px;
+}
+
+.image-container {
+  flex: 2; /* Prend toute la largeur disponible */
+  padding-right: 20px; /* Espacement à droite de l'image */
+}
+
+.about-image img {
+  width: 75%; /* Image responsive */
+  height: auto;
+  margin-left: 4rem;
+}
+
+.text-container {
+  margin-right: 50px;
+  flex: 1; /* Prend deux fois la largeur de l'image */
+}
+
+.text-container h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-weight: bold;
+  line-height: 2;
+}
+
+
+

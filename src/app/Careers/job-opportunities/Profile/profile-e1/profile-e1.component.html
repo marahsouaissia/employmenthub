@@ -1,0 +1,36 @@
+<div class="job-container">
+<div class="Back" (click)="navigateToJobOpportunities()">
+    <img class="Back-img" src="/assets/images/left.png" alt="image">
+    <p class="Back-text">Back</p>
+  </div>
+  <div class="outer-container">
+    <div class="content-box">
+      <div class="steps-container">
+  <div class="step">
+    <div class="circle1">1</div>
+    <div class="line"></div>
+  </div>
+  <div class="step">
+    <a [routerLink]="['/profile-e2']" class="circle-link">
+      <div class="circle">2</div>
+    </a>
+    <div class="line"></div>
+  </div>
+
+  <div class="step">
+    <div class="circle">3</div>
+  </div>
+</div>
+  <div class="title">
+    <h3>Mon CV</h3>
+  </div>
+<div class="cv-upload-container">
+  <div class="cv-upload">
+    <input type="file" id="cv-upload" accept=".pdf, .doc, .docx">
+    <label for="cv-upload">Mon CV.pdf</label>
+  </div>
+</div>
+</div>
+</div>
+</div>
+

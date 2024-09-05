@@ -1,0 +1,43 @@
+.navbar-nav .nav-item .nav-link {
+  color: black; /* Couleur par défaut du texte */
+}
+.navbar{
+  width: 100% !important;
+  height: 6vw!important;
+}
+.container-fluid{
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+
+}
+.searchclass{
+  display: flex;
+  height: 3vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.headcontent{
+  height: 100%  !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+  color: #FFFFFF; /* Texte blanc quand survolé ou actif */
+  background-color: #333A94; /* Fond bleu quand survolé ou actif */
+  border-bottom-left-radius : 10px ;
+  border-bottom-right-radius : 10px ;
+}
+
+.nav-item.active .nav-link {
+  background-color: #333A94; /* Adjust the color as needed */
+  color: white !important;
+  border-bottom-left-radius : 10px ;
+  border-bottom-right-radius : 10px ;}
+
+
+

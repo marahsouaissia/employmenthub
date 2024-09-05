@@ -1,0 +1,82 @@
+<div class="job-container">
+  <div class="Back" (click)="navigateToJobOpportunities()">
+    <img class="Back-img" src="/assets/images/left.png" alt="image">
+    <p class="Back-text">Back</p>
+  </div>
+  <div class="outer-container">
+    <div class="content-box">
+      <div class="steps-container">
+        <div class="step">
+          <div class="circle1">1</div>
+        <div class="line"></div>
+      </div>
+        <div class="step">
+          <div class="circle1">2</div>
+          <div class="line"></div>
+        </div>
+        <a [routerLink]="['/profile-e3']" class="circle-link">
+          <div class="circle">3</div>
+        </a>
+      </div>
+    <div class="title">
+    <h3>A propos</h3>
+    </div>
+
+      <div class="application-form-container">
+        <form class="application-form" action="submit-application.php" method="post" enctype="multipart/form-data">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="nom" required>
+
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="prénom" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="adresse email" required>
+
+          <label for="ville">Ville</label>
+          <select id="ville">
+            <option value="">Ville</option>
+            <option value="Sousse">Sousse</option>
+            <option value="Tunis">Tunis</option>
+            <option value="Tataouin">Tataouin</option>
+          </select>
+
+          <label for="numero">Numéro de télephone</label>
+          <input type="numero" id="numero" name="numero" placeholder="numéro de télephone" required>
+
+          <label for="email">Dernier poste occupé<span class="required"></span></label>
+          <input type="poste" id="poste" name="poste" placeholder="Developpeur" required>
+
+          <label for="niveau">Niveau de formation<span class="required"></span></label>
+          <select id="niveau">
+            <option value="">BAC+5</option>
+            <option value="BAC+3">BAC+3</option>
+            <option value="BAC+5">BAC+5</option>
+            <option value="Plus">Plus que BAC+5</option>
+          </select>
+          <label for="niveau">Niveau d'anglais :</label>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="niveau" value="moyen"> Moyen
+            </label>
+            <label>
+              <input type="checkbox" name="niveau" value="bon"> Bon
+            </label>
+            <label>
+              <input type="checkbox" name="niveau" value="excellent"> Excellent
+            </label>
+          </div>
+
+
+
+          <label for="contrat">Type de contrat<span class="required"></span></label>
+          <input type="contrat" id="contrat" name="contrat" placeholder="Cdi" required>
+
+          <div class="button-container">
+          <button type="submit">Complétez mon profil</button>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+</div>

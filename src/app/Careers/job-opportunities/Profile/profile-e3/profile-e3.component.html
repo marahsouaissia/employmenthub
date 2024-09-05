@@ -1,0 +1,41 @@
+<div class="job-container">
+  <div class="Back" (click)="navigateToJobOpportunities()">
+    <img class="Back-img" src="/assets/images/left.png" alt="image">
+    <p class="Back-text">Back</p>
+  </div>
+  <div class="outer-container">
+    <div class="content-box">
+      <div class="steps-container">
+        <div class="step">
+          <div class="circle1">1</div>
+          <div class="line"></div>
+        </div>
+        <div class="step">
+          <div class="circle1">2</div>
+          <div class="line"></div>
+        </div>
+        <div class="step">
+          <div class="circle">3</div>
+        </div>
+      </div>
+      <div class="title">
+        <h3>Experiences</h3>
+      </div>
+      <div class="skills-container">
+        <div class="input-container">
+        <input type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/votreprofil" required>
+        </div>
+        <h4>Compétences informatiques</h4>
+        <p>Ajoutez facilement les compétences liées à votre emploi :</p>
+      </div>
+    </div>
+  </div>
+  <div class="alert-container">
+    <div class="box">
+      <img class="alert-img" src="/assets/images/alert-icon.png" alt="image">
+      <p>activer l'alert CV</p>
+      <div class="card flex justify-content-center">
+        <p-inputSwitch formControlName="checked" />
+      </div>    </div>
+  </div>
+</div>

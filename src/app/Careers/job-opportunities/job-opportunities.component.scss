@@ -1,0 +1,229 @@
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  background-color: #E2F1FF;
+  border-top: 1px solid #1563FF;
+  border-bottom: 1px solid #1563FF;
+  box-shadow: 0 -4px 3px -1px rgba(0, 0, 0, 0.01), 0 4px 6px -1px rgba(0, 0, 0, 0.01); /* Ombres plus claires */
+}
+
+.profile-text p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #4E3883;
+  font-weight: bold;
+}
+
+.profile-button button {
+  padding: 0.5rem 1.5rem;
+  margin-right: 3rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #333A94;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-offer-section {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 100%;
+  //font-style:Roboto;
+  //height: 100vh;
+}
+
+.job-offer-title {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+.job-offer-description {
+  font-size: 1.2rem;
+  color: #000000;
+  line-height: 1.6;
+  max-width: 80rem;
+}
+.choose-container {
+  display: flex;
+  justify-content: space-between; /* Ajouter ceci pour espacer les éléments */
+  margin-bottom: 5rem;
+}
+
+.choose-section {
+  display: flex; /* Ajouter ceci pour aligner les éléments à gauche */
+  margin-left: 4rem;
+}
+
+.choose-section select {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 14vw;
+  height: 6vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 4rem;
+}
+.search-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.8rem; /* Ajustez cette valeur en fonction de la largeur de votre padding */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem; /* Ajustez la taille de l'icône selon vos besoins */
+  height: auto;
+  pointer-events: none; /* Permet de cliquer à travers l'image */
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 2.5rem; /* Espace pour l'icône */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #ccc; /* Couleur du texte du placeholder */
+}
+
+
+.search .form-control {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search .btn {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4E3883;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.job-offer-link {
+  text-decoration: none;
+  color: inherit;
+}
+.job-offer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centre tout le contenu verticalement */
+  border: 1px solid #707070;
+  padding: 0.2rem;
+  border-radius: 5px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  max-width: 100vw;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.job-offer-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-offer-left {
+  display: flex;
+  align-items: center; /* Centre le texte verticalement */
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333A94;
+}
+
+/* Partie droite structurée en colonne */
+.job-offer-right {
+  //display: flex;
+  //flex-direction: column; /* Colonne pour superposer la date et la localisation */
+  //justify-content: center; /* Centrer verticalement dans le conteneur */
+  text-align: right; /* Aligner le texte à droite */
+  color: #8989A2;
+}
+
+.job-offer-right .job-date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+  color: #666;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem; /* Espacement entre la date et la localisation */
+}
+
+.job-offer-right .job-location {
+  font-size: 1rem;
+  color: #8989A2;
+}
+
+.job-offer-right span {
+  color: #333A94;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.job-offer-right img {
+  margin-left: 0.3rem;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  margin: 2rem 0; /* Ajoute de l'espace en haut et en bas */
+  margin-top: 5rem;
+}
+
+.pagination-arrow {
+  width: 1rem; /* Taille des flèches */
+  height: 1rem;
+  cursor: pointer;
+  margin: 0 1rem; /* Espace entre les flèches et le numéro */
+}
+
+.pagination-number {
+  font-size: 1.2rem; /* Taille du numéro de page */
+  font-weight: bold;
+  color: #000000; /* Couleur du texte */
+}
+
+
+
+.margininit{
+  margin-bottom: 0!important;
+}
+

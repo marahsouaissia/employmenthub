@@ -1,0 +1,69 @@
+<div class="job-container">
+  <div class="Back" (click)="navigateToJobOpportunities()">
+    <img class="Back-img" src="/assets/images/left.png" alt="image">
+    <p class="Back-text">Back</p>
+  </div>
+
+  <div class="job-info-container">
+    <div *ngIf="job">
+      <h2 class="job-title">Offre d'emploi: {{ job.title }}</h2>
+      <div class="job-info">
+    <div class="job-info-item">
+      <img src="/assets/images/Icon-calendar.png" alt="Date">
+      <p>{{ job.date }}</p>
+    </div>
+    <div class="job-info-item">
+      <img src="/assets/images/Icon-contrat.png" alt="Type">
+      <p>{{ job.type_contrat }}</p>
+    </div>
+    <div class="job-info-item">
+      <img src="assets/images/Icon-time.png" alt="Published Time">
+      <p>{{ calculateTimeSincePosted(job.postedDate) }}</p> <!-- Dynamique -->
+    </div>
+    <div class="job-info-item">
+      <img src="assets/images/Icon-time.png" alt="Save Job"> <!-- Changer l'icône si besoin -->
+      <p>Sauvegarder</p> <!-- Ajout d'une action dynamique -->
+    </div>
+   </div>
+
+
+
+  <div class="job-description-container">
+    <div class="job-description">
+      <h3>Description</h3>
+      <p>{{ job.description }}</p>
+    </div>
+
+    <div class="job-qualifications">
+      <h3>Qualifications</h3>
+      <ul>
+        <li>{{ job.qualifications.experience }}</li>
+        <li *ngFor="let tech of job.qualifications.experience">{{ tech }}</li>
+      </ul>
+    </div>
+    <div class="job-technologies">
+      <h3>Technologies</h3>
+      <ul>
+        <li>{{ job.qualifications.technologies }}</li>
+        <li *ngFor="let tech of job.qualifications.technologies">{{ tech }}</li>
+      </ul>
+    </div>
+
+    <div class="job-skills">
+      <h3>Compétences relationnelles</h3>
+      <ul>
+        <li *ngFor="let skill of job.skills">{{ skill }}</li>
+      </ul>
+    </div>
+
+    <div class="job-details">
+      <p>Job Category: {{ job.category }}</p>
+      <p>Job Type: {{ job.type }}</p>
+      <p>Job Location: {{ job.location }}</p>
+    </div>
+
+    <button class="apply-button">Postuler</button>
+  </div>
+</div>
+</div>
+</div>

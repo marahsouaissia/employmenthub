@@ -1,0 +1,295 @@
+.job-container {
+  width: 100%;
+  padding: 2rem; /* Espace autour du conteneur */
+}
+.Back {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.3rem; /* Espace en dessous de la section retour */
+  cursor: pointer; /* Indique que c'est cliquable */
+}
+
+.Back-img {
+  width: 0.6rem; /* Ajuste la taille de l'image */
+  margin-right: 0.5rem; /* Espace entre l'image et le texte */
+}
+
+.Back-text {
+  font-size: 1.2rem; /* Ajuste la taille du texte */
+  color: #333A94; /* Couleur du texte */
+  line-height: 1.2rem; /* Alignement vertical avec l'image */
+}
+.outer-container {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  height: 180vh;
+}
+
+.content-box {
+  //display: flex;
+  //justify-content:center;
+  background-color: #FFFFFF;
+  border: 1px #00000029;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 5px;
+  max-width: 70vw;
+  width: 100%;
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 42px;
+  height: 42px;
+  background-color: #65A1F2;
+  color: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.circle1 {
+  width: 42px;
+  height: 42px;
+  background-color:#B7EB8F;
+  color: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.line {
+  width: 7vw;
+  height: 0.3vh;
+  background-color: #00000029;
+}
+.title{
+  display: flex;
+  justify-content:center;
+  padding-top: 4rem;
+}
+.title h3{
+  color: #000000;
+  font-weight: bold;
+}
+
+.application-form-container {
+  //display: flex;
+  //align-items: center;
+  position: absolute;
+  left: 8rem;
+  padding-top: 1rem;
+  width: 80rem;
+  //margin-right: 4rem;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+}
+
+.application-form label {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 0.2rem;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.application-form input {
+  width: 100%; /* Ensures the input takes up the full width of its parent */
+  max-width: 600px; /* Optional: Set a max-width */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+
+.required-intro {
+  color: #000000;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+//.application-form select {
+//  display: flex;
+//  align-items: center;
+//  padding: 0.8rem;
+//  width:50vw;
+//  margin-bottom: 1.5rem;
+//  background-color: #F9F9FC;
+//  border: 1px solid #ccc;
+//  border-radius: 0.5rem;
+//  font-size: 1rem;
+//}
+.application-form input::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+
+
+.application-form input[type="file"] {
+  padding: 0;
+}
+//
+//.card {
+//  display: flex;
+//  justify-content: center;
+//}
+//
+//p-dropdown {
+//  width: 25vw;
+//  //max-width: 400px;
+//}
+//
+//p-dropdown .p-dropdown-label {
+//  //width: 100%;
+//  padding: 0.5rem;
+//  border: 1px solid #ccc;
+//  border-radius: 4px;
+//}
+//
+//.p-dropdown-panel {
+//  max-width: 400px;
+//}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically within the container */
+  margin-top: 2rem; /* Adds some space above the button */
+}
+.application-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //padding: 1rem;
+  width: 17rem;
+  height: 2.5rem;
+  background-color: #65A1F2;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+//.checkbox-group {
+//  display: flex;
+//  flex-wrap: wrap;
+//  gap: 10px; /* Adjust the gap as needed */
+//}
+//
+//.checkbox-group label {
+//  display: flex;
+//  align-items: center;
+//}
+//
+//.checkbox-group input[type="checkbox"] {
+//  margin-right: 5px; /* Adjust the margin as needed */
+//}
+
+.application-form select {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none; /* Remove default arrow */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcMCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvc3ZnbHMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXciIHZpZXdCb3g9IjAgMCAxMCAxMCI+PGBhdHkgZD0iTTIuNSA1LjUgNUg1VjIuNSIvPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+  cursor: pointer;
+}
+.phone-input-container {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+}
+
+.phone-input-container select,
+.phone-input-container input[type="tel"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.phone-input-container select {
+  width: 30%;
+  margin-right: 0.5rem;
+}
+
+.phone-input-container input[type="tel"] {
+  width: 70%;
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 2rem;
+}
+
+.checkbox-group label {
+  position: relative; /* Pour positionner l'icône de coche */
+  margin-right: 3.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px; /* Diamètre du cercle */
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  //top: 0;
+  left: -2rem;
+  //right: 1rem;
+  bottom: -0.9rem;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"]:checked::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+  top: 3px;
+  left: 3.9px;
+}
+#niveau {
+  background-color: #FFFFFF; /* Couleur de fond */
+  color: #707070; /* Couleur du texte */
+}
+#ville {
+  background-color: #FFFFFF; /* Couleur de fond */
+  color: #707070; /* Couleur du texte */
+}

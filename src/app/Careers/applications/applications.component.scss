@@ -1,0 +1,151 @@
+.signup-container {
+  background-color: #ffcccc;
+  padding: 0.5rem;
+  //border-radius: 1rem;
+  max-width: 100%;
+  margin-top: 4vh;
+  margin-bottom: 6vh;
+  padding-left: 2rem;
+}
+
+.signup-container p {
+  margin: 0;
+  font-size: 1rem;
+  color: #4E3883;
+  text-align: left;
+}
+
+.signup-link {
+  background-color: #F3C9CB;
+  color: #4E3883;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.centered-container {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.main-heading {
+  font-size: 2.5rem; /* Taille du texte pour h1 */
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.sub-heading {
+  font-size: 1.5rem; /* Taille du texte pour h2 */
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  margin-left: 1rem;
+}
+
+.application-form-container {
+  padding: 2rem;
+  width: 80rem;
+  margin-right: 4rem;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.required-intro {
+  color: #000000;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.application-form label {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.application-form input,
+.application-form select {
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  background-color: #F9F9FC;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.application-form input[type="file"] {
+  padding: 0;
+}
+
+
+
+
+.application-form button {
+  //padding: 1rem;
+  width: 10rem;
+  height: 2.5rem;
+  background-color: #65A1F2;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.required {
+  color: red;
+  margin-left: 0.2rem;
+}
+
+.propositions-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.propositions-section,
+.demands-section {
+  margin-bottom: 2rem;
+}
+
+.propositions-title,
+.demands-title {
+  font-size: 1.6rem;
+  color: #000000;
+font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.propositions-list,
+.demands-list {
+  list-style: none;
+  padding: 0;
+}
+
+.propositions-list li,
+.demands-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.propositions-list li img,
+.demands-list li img {
+  margin-right: 0.5rem;
+}
+
+.job-date{
+  margin-left: 5rem;
+}

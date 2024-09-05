@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="row w-100 headcontent">
+      <div class="col-sm-4">
+        <img class="logo" src="/assets/images/LOGO2.png" alt="Description de l'image">
+      </div>
+      <div class="col-sm-4 collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" [ngClass]="{active: currentRoute === '/'}">
+            <a class="nav-link" aria-current="page" [routerLink]="['/']">Accueil</a>
+          </li>
+          <li class="nav-item" [ngClass]="{active: currentRoute === '/about-us'}">
+            <a class="nav-link" [routerLink]="['/about-us']">À propos</a>
+          </li>
+          <li class="nav-item dropdown" [ngClass]="{active: currentRoute === '/applications' || currentRoute === '/job_opportunities'}">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Carrières
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" [routerLink]="['/applications']">Candidature spontanée</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/job_opportunities']">Offres d'emploi</a></li>
+              <li><a class="dropdown-item" href="#">Offre de stage</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" [ngClass]="{active: currentRoute === '/camelsoft'}">
+            <a class="nav-link disabled" href="#">Camelsoft.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-4 searchclass">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
